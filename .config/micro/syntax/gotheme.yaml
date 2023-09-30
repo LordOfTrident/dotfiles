@@ -1,0 +1,20 @@
+filetype: gotheme
+detect:
+    filename: "\\.(gotheme)$"
+
+rules:
+    - preproc: "\\$\\(([^\\$\\(\\)]*)\\)"
+
+    - constant.string:
+        start: "\""
+        end: "\""
+        rules:
+            - constant.specialChar: ""
+
+    - constant.number: "\\b([0-9]+)\\b"
+
+    - comment:
+        start: "#"
+        end: "$"
+        rules:
+            - todo: "(TODO|XXX|FIXME|READABLE):?"

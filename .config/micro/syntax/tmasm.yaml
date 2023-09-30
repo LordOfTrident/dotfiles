@@ -1,0 +1,44 @@
+filetype: tmasm
+detect:
+    filename: "\\.(tmasm|.tsm)$"
+
+rules:
+    - identifier: "\\&\\b([A-Z_][0-9A-Z_]*)\\b"
+    - identifier: "\\@[0-9A-Za-z]+"
+    - identifier: "\\b([0-9A-Z_]+)\\b"
+    - preproc: "\\b(data|define)\\b"
+    - statement: "\\B(\\.|,)\\B"
+    - statement: "\\b(move|push|pop|add|jump|jumpt|jumpf|eq|neq|gt|ge|lt|le|halt|sub|inc|dec|mult|div|mod|call|callt|callf|ret|write|read|pusha|popa|syscall)\\b"
+    - preproc: "[0-9A-Za-z_\\-]+\\:"
+    - special: "\\b(debug|WORD|INT64|INT32|INT16|BYTE)\\b"
+
+    - constant.string:
+        start: "\""
+        end: "\""
+        rules:
+            - constant.specialChar: "\\\\[0abefnrtv\\\"\\\\]"
+            - constant.specialChar: "g:"
+
+    - constant.string:
+        start: "'"
+        end: "'"
+        rules:
+            - error: "..+"
+            - constant.specialChar: "\\\\[0abefnrtv\\\"\\\\]"
+
+    - constant.number: "\\$[0-9A-Fa-f]+"
+    - constant.number: "\\b([0-9]+)\\b"
+
+    - symbol.operator: "[\\&]"
+
+    - comment:
+        start: ";"
+        end: "$"
+        rules:
+            - todo: "(TODO|XXX|FIXME|READABLE):?"
+
+    - comment:
+        start: "#!"
+        end: "$"
+        rules:
+            - todo: "[0-9A-Za-z_\\/\\\\]*"

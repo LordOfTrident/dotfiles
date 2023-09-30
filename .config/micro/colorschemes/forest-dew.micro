@@ -1,0 +1,28 @@
+# Forest dew
+color-link default             "white"
+color-link namespaces          "bold brightyellow"
+color-link global-include      "brightgreen"
+color-link property            "white"
+color-link variable            "white"
+color-link comment             "italics #606869" # grey
+color-link constant            "bold brightmagenta"
+color-link constant.string     "brightcyan"
+color-link identifier          "white" # brightmagenta
+color-link statement           "bold #d9985a"
+color-link symbol              "white"
+color-link preproc             "bold red"
+color-link type                "bold red"
+color-link special             "bold #d9985a"
+color-link functions           "bold green" #brightgreen
+color-link underlined          "underline brightgreen"
+color-link error               "red"
+color-link scrollbar           "grey,grey"
+color-link divider             "green,green"
+color-link symbol.operator     "#d9985a"
+color-link todo                "bold brightblue"
+color-link line-number         "grey"
+color-link current-line-number "white,grey"
+color-link cursor-line         "grey"
+color-link color-column        "grey,white"
+color-link statusline          "black,green"
+color-link tabbar              "green"

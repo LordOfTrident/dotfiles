@@ -1,0 +1,14 @@
+{
+    "autosu": true,
+    "colorcolumn": 100,
+    "colorscheme": "forest-dew",
+    "fastdirty": true,
+    "ignorecase": false,
+    "linter": false,
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
+    ],
+    "pluginrepos": [],
+    "rmtrailingws": true,
+    "scrollbar": true
+}

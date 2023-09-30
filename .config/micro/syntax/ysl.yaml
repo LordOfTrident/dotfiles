@@ -1,0 +1,102 @@
+#filetype: ysl
+#
+#detect:
+#    filename: "\\.(ysl)$"
+#
+#rules:
+#    - statement: "\\b(print|println|exit|run|goto|goto_if|wait|cmp|var|load|size)\\b"
+#    - statement: "\\b(getch|input|putch|set_size|gosub|gosub_if|return)\\b"
+#    - statement: "\\b([A-Za-z0-9]*\\.[A-Za-z0-9]*)\\b"
+#    - identifier: "\\$\\{?[0-9A-Za-z_!@#$*?-]+\\}?"
+#    - identifier: "\\$\\{?[0-9A-Za-z_!@#$*?-]+\\}?"
+#    - identifier: "\\*\\{?[0-9A-Za-z_!@#$*?-]+\\}?"
+#    - identifier: "\\!\\{?[0-9A-Za-z_!@#$*?-]+\\}?"
+#
+#
+#    - functions: "\\b([A-Z_a-z][0-9A-Z_a-z]*)\\b\\s*\\:"
+#
+#    - constant.string:
+#        start: "\""
+#        end: "\""
+#        skip: "\\\\."
+#        rules:
+#            - constant.specialChar: "\\\\([\"'abfnrtv\\\\]|[0-3]?[0-7]{1,2}|x[0-9A-Fa-f]{1,2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8})"
+#
+#    - symbol.operator: "\\b(=|\\-|\\+|\\*|\\/|\\%)\\b"
+#
+#    - constant.number: "\\b([0-9.]*)\\b"
+#    - constant.bool: "\\b(true|false)\\b"
+#
+#    - comment:
+#        start: "#"
+#        end: "$"
+#        rules:
+#            - todo: "(TODO|XXX|FIXME):?"
+
+#filetype: ysl
+#
+#detect:
+#    filename: "\\.(ysl)$"
+#
+#rules:
+#    - statement: "\\b(func|endfunc|asm|return|int|array|local|addr|to|set|param)\\b"
+#    - statement: "\\b(import|export|if|endif|while|endwhile|for|endfor|else)\\b"
+#    - statement: "\\b(string|faddr)\\b"
+#    # - statement: "\\b([A-Za-z0-9]*\\.[A-Za-z0-9]*)\\b"
+#    - identifier: "%.*"
+#    - identifier: "\\$\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+#    - identifier: "\\$\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+#    - identifier: "\\*\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+#    - identifier: "\\!\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+#    - identifier: "\\&\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+#
+#    - constant.string:
+#        start: "\""
+#        end: "\""
+#        skip: "\\\\."
+#        rules:
+#            - constant.specialChar: "\\\\([\"'abfnrtv\\\\]|[0-3]?[0-7]{1,2}|x[0-9A-Fa-f]{1,2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8})"
+#
+#    - constant.number: "\\b([0-9.]*)\\b"
+#    - constant.bool: "\\b(true|false)\\b"
+#
+#    - comment:
+#        start: "#"
+#        end: "$"
+#        rules:
+#            - todo: "(TODO|XXX|FIXME):?"
+
+filetype: ysl
+
+detect:
+    filename: "\\.(ysl)$"
+
+rules:
+    - statement: "\\b(func|end|let|asm|param|set|extern|return|if|while|overload|for)\\b"
+    - type:      "\\b(addr|void|u8|i8|u16|i16|u32|i32|u64|i64)\\b"
+    - statement: "\\b([A-Za-z0-9]*\\.[A-Za-z0-9]*)\\b"
+    - identifier: "\\$\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+    - identifier: "\\$\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+    - identifier: "\\*\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+    - identifier: "\\!\\{?[0-9A-Za-z._!@#$*?-]+\\}?"
+    - preproc:    "\\b(%)*\\b"
+
+    - functions: "\\b([A-Z_a-z][0-9A-Z_a-z]*)\\b\\s*\\:"
+
+    - constant.string:
+        start: "\""
+        end: "\""
+        skip: "\\\\."
+        rules:
+            - constant.specialChar: "\\\\([\"'abfnrtv\\\\]|[0-3]?[0-7]{1,2}|x[0-9A-Fa-f]{1,2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8})"
+
+    - symbol.operator: "\\b(=|\\-|\\+|\\*|\\/|\\%)\\b"
+
+    - constant.number: "\\b([0-9.]*)\\b"
+    - constant.bool: "\\b(true|false)\\b"
+
+    - comment:
+        start: "#"
+        end: "$"
+        rules:
+            - todo: "(TODO|XXX|FIXME):?"

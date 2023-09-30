@@ -1,0 +1,73 @@
+/*       ▅
+ *   ▟  ▐█▌  ▙
+ *  ▟█  ███  █▙
+ *  ██  ███  ██    ██╗      ██████╗ ████████╗
+ *  ██  ███  ██    ██║     ██╔═══██╗╚══██╔══╝
+ *  ██  ███  ██    ██║     ██║   ██║   ██║
+ *  █▀  ▀█▀  ▀█    ██║     ██║   ██║   ██║
+ *   ▄█▅▃▁▃▅█▄     ███████╗╚██████╔╝   ██║
+ *     ▀▀▀▀▀       ╚══════╝ ╚═════╝    ╚═╝
+ *      █▅█
+ *      ███        LordOfTrident
+ *      ███        https://lordoftrident.github.io
+ *      ▀█▀
+ */
+
+{
+	/* Liberation Mono, Jet Brains Mono, DejaVu Sans Mono, Cascadia Code */
+	"font":  "Cascadia Code:pixelsize=14:antialias=true:autohint=true",
+	"font2": "DejaVu Sans Mono for Powerline:pixelsize=14:antialias=true:autohint=true",
+
+	"border-px":  0,
+	"bg-opacity": 0.97,
+
+	"shell": "/bin/sh",
+
+	"char-width-scale":  1.0,
+	"char-height-scale": 0.9,
+
+	"blink-timeout":    600, /* 0 to disable */
+	"cursor-thickness": 2,
+
+	"bell-volume": 0, /* -100 to 100, 0 to disable */
+	"tab-spaces":  4,
+
+	/*
+	 * Default shape of cursor
+	 * 2: Block ("█")
+	 * 4: Underline ("_")
+	 * 6: Bar ("|")
+	 * 7: Snowman ("☃")
+	 */
+
+	"cursor-shape": 2,
+
+	"default-rows": 25,
+	"default-cols": 92,
+
+	"colors": {
+		"black":   "$(black)",
+		"red":     "$(red)",
+		"green":   "$(green)",
+		"yellow":  "$(yellow)",
+		"blue":    "$(blue)",
+		"magenta": "$(magenta)",
+		"cyan":    "$(cyan)",
+		"white":   "$(white)",
+
+		"grey":           "$(grey)",
+		"bright-red":     "$(bright-red)",
+		"bright-green":   "$(bright-green)",
+		"bright-yellow":  "$(bright-yellow)",
+		"bright-blue":    "$(bright-blue)",
+		"bright-magenta": "$(bright-magenta)",
+		"bright-cyan":    "$(bright-cyan)",
+		"bright-white":   "$(bright-white)",
+
+		"default-fg": "$(fg)",
+		"default-bg": "$(bg)",
+
+		"default-rfg": "$(bg)",
+		"default-rbg": "$(fg)",
+	}
+}

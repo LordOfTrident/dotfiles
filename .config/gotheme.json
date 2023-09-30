@@ -1,0 +1,177 @@
+{
+	"Targets": {
+		"dunst": {
+			"Path": "~/.config/dunst/dunstrc.gotheme",
+			"Orig": "~/.config/dunst/dunstrc",
+			"Format": "#$(X)"
+		},
+		"flameshot": {
+			"Path": "~/.config/Dharkael/flameshot.gotheme.ini",
+			"Orig": "~/.config/Dharkael/flameshot.ini",
+			"Format": "#$(X)"
+		},
+		"gtk3": {
+			"Path": "~/.config/gtk-3.0/gtk.gotheme.css",
+			"Orig": "~/.config/gtk-3.0/gtk.css",
+			"Format": "#$(X)"
+		},
+		"i3": {
+			"Path": "~/.config/i3/config.gotheme",
+			"Orig": "~/.config/i3/config",
+			"Format": "#$(X)"
+		},
+		"polybar": {
+			"Path": "~/.config/polybar/config.gotheme.ini",
+			"Orig": "~/.config/polybar/config.ini",
+			"Format": "#$(X)"
+		},
+		"st": {
+			"Path": "~/.config/st.gotheme.json",
+			"Orig": "~/.config/st.json",
+			"Format": "#$(X)"
+		}
+	},
+	"Themes": {
+		"forest-dew": {
+			"accent": {
+				"Hex": "c583a6",
+				"R": 197,
+				"G": 131,
+				"B": 166
+			},
+			"bg": {
+				"Hex": "1e2326",
+				"R": 30,
+				"G": 35,
+				"B": 38
+			},
+			"black": {
+				"Hex": "161819",
+				"R": 22,
+				"G": 24,
+				"B": 25
+			},
+			"blue": {
+				"Hex": "4ca7b7",
+				"R": 76,
+				"G": 167,
+				"B": 183
+			},
+			"bright-blue": {
+				"Hex": "67b0c5",
+				"R": 103,
+				"G": 176,
+				"B": 197
+			},
+			"bright-cyan": {
+				"Hex": "7fbeb5",
+				"R": 127,
+				"G": 190,
+				"B": 181
+			},
+			"bright-green": {
+				"Hex": "9bc594",
+				"R": 155,
+				"G": 197,
+				"B": 148
+			},
+			"bright-magenta": {
+				"Hex": "d691b5",
+				"R": 214,
+				"G": 145,
+				"B": 181
+			},
+			"bright-orange": {
+				"Hex": "e8aa7b",
+				"R": 232,
+				"G": 170,
+				"B": 123
+			},
+			"bright-red": {
+				"Hex": "ee8580",
+				"R": 238,
+				"G": 133,
+				"B": 128
+			},
+			"bright-white": {
+				"Hex": "eaeae5",
+				"R": 234,
+				"G": 234,
+				"B": 229
+			},
+			"bright-yellow": {
+				"Hex": "e9c87a",
+				"R": 233,
+				"G": 200,
+				"B": 122
+			},
+			"cyan": {
+				"Hex": "65b1a8",
+				"R": 101,
+				"G": 177,
+				"B": 168
+			},
+			"fg": {
+				"Hex": "cccccc",
+				"R": 204,
+				"G": 204,
+				"B": 204
+			},
+			"green": {
+				"Hex": "7cb67a",
+				"R": 124,
+				"G": 182,
+				"B": 122
+			},
+			"grey": {
+				"Hex": "363e40",
+				"R": 54,
+				"G": 62,
+				"B": 64
+			},
+			"grey2": {
+				"Hex": "4b5456",
+				"R": 75,
+				"G": 84,
+				"B": 86
+			},
+			"grey3": {
+				"Hex": "606869",
+				"R": 96,
+				"G": 104,
+				"B": 105
+			},
+			"magenta": {
+				"Hex": "ce7aaa",
+				"R": 206,
+				"G": 122,
+				"B": 170
+			},
+			"orange": {
+				"Hex": "d9985a",
+				"R": 217,
+				"G": 152,
+				"B": 90
+			},
+			"red": {
+				"Hex": "e85a66",
+				"R": 232,
+				"G": 90,
+				"B": 102
+			},
+			"white": {
+				"Hex": "cccccc",
+				"R": 204,
+				"G": 204,
+				"B": 204
+			},
+			"yellow": {
+				"Hex": "e2b956",
+				"R": 226,
+				"G": 185,
+				"B": 86
+			}
+		}
+	},
+	"Current": "forest-dew"
+}

@@ -1,0 +1,11 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-a": "lua:snippets.Accept",
+    "Alt-d": "lua:snippets.Cancel",
+    "Alt-s": "lua:snippets.Insert",
+    "Alt-w": "lua:snippets.Next",
+    "CtrlB": "command:fexec make",
+    "CtrlP": "command:snippetinsert {w}",
+    "CtrlUnderscore": "lua:comment.comment",
+    "F4": "command:jumptag"
+}
