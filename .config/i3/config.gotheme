@@ -61,6 +61,7 @@ exec --no-startup-id setxkbmap -option 'grp:shift_caps_toggle'
 
 # Microphone
 bindsym F8 exec amixer set Capture toggle
+bindsym $mod+F8 exec ~/Scripts/afk
 
 # Screenshot
 bindsym Print exec flameshot full -p ~/Pictures/Screenshots/
