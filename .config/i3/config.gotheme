@@ -27,7 +27,8 @@ exec_always --no-startup-id compton
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # dmenu emojis script
-bindsym $mod+Control+e exec ~/Scripts/emoji
+# $mod+Control+e
+bindsym F7 exec ~/Scripts/emoji
 
 # Disable touchpad
 exec --no-startup-id synclient TouchpadOff=1
@@ -57,6 +58,9 @@ gaps outer 20
 # Keyboard layouts
 exec --no-startup-id setxkbmap -layout us,sk
 exec --no-startup-id setxkbmap -option 'grp:shift_caps_toggle'
+
+# Microphone
+bindsym F8 exec amixer set Capture toggle
 
 # Screenshot
 bindsym Print exec flameshot full -p ~/Pictures/Screenshots/
