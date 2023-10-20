@@ -4,12 +4,12 @@ detect:
     filename: "\\.(c|h)$"
 
 rules:
+    - identifier: "\\b[A-Z_][0-9A-Z_]*\\b"
     - property: "\\.\\b[A-Z_a-z][0-9A-Z_a-z]*\\b"
     - property: "\\->\\b[A-Z_a-z][0-9A-Z_a-z]*\\b"
     - functions: "\\b([A-Z_a-z][0-9A-Z_a-z]*)\\b\\s*\\("
     - variable: "\\b((g|p|m)_[A-Z_a-z][0-9A-Z_a-z]*)\\b"
 
-    - identifier: "\\b[A-Z_][0-9A-Z_]*\\b"
     - type: "\\b(float|double|bool|char|int|short|long|void|(un)?signed)\\b"
     - type: "\\b(((s?size)|((u_?)?int(8|16|32|64|ptr))|char(8|16|32))_t|wchar_t)\\b"
     - type: "\\b[a-z_][0-9A-Za-z_]+(_t|_T)\\b"
