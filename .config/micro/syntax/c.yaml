@@ -12,7 +12,8 @@ rules:
 
     - type: "\\b(float|double|bool|char|int|short|long|void|(un)?signed)\\b"
     - type: "\\b(((s?size)|((u_?)?int(8|16|32|64|ptr))|char(8|16|32))_t|wchar_t)\\b"
-    - type: "\\b[a-z_][0-9A-Za-z_]+(_t|_T)\\b"
+    - type: "\\b[a-z_][0-9A-Za-z_]+(_t|_T)\\b" # _t postfix type names
+    # - type: "\\b[A-Z][a-z][0-9A-Za-z_]+\\b"    # PascalCase type names
     - type: "\\b(final|override)\\b"
 
     - type: "\\b(auto|const)\\b"
