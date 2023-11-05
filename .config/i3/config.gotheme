@@ -50,7 +50,7 @@ for_window [class="^.*"] border pixel 2
 
 # i3 gaps
 gaps inner 8
-gaps outer 20
+gaps outer 27
 
 # Remove gaps when only a single window is open
 # smart_gaps on
@@ -113,7 +113,7 @@ bindsym Control+$mod+t exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -nb '$(bg)' -sf '$(bg)' -sb '$(orange)' -nf '$(orange)'
+bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
